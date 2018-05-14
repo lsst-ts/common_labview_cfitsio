@@ -1,0 +1,15 @@
+[0]
+OBJECT  ='database           ' /object title
+SOFTVER ='database           ' /software version
+HDR_REV ='database           ' /header revision
+OBSERVER='database           ' /observer
+UTSHUT  ='database           ' /UT shutter open
+COADDS  ='database           ' /number of coadded images
+FSAMPLE ='database           ' /number of fawler samples
+EXPTIME ='database           ' /exposure time
+NAMPSYX ='database           ' /number of amplifiers in y x
+CCDSUM  ='database           ' /binning in x y
+[1-*]
+OBJECT  ='database           ' /object title
+SOFTVER ='database           ' /software version
+HDR_REV ='database           ' /header revision

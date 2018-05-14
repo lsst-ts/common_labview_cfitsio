@@ -1,0 +1,44 @@
+This is version 5.1 of the FITS module. Previous version was 5.0
+
+New to this version:
+	- Mod. Remove cfitsio copy from module. Mod makefile to use
+	  system library.
+	- Mod. Rename FITS_ReadImgF32 to FITS_LoadImgSGL.
+	- Mod. Rename FITS_ReadImg to FITS_ReadImdSGL.
+	- Mod. Add FITS_WriteKeyFromChar.
+
+Version 5.0: July 13, 2012
+	- Moved to LabVIEW 2010 under CentOS 5.8
+	- Bugfix. labfits_open_file returned negative value for file
+	  reference because of signed representation. 
+	- FITS_OpenFile, FITS_GetImgSize, FITS_ReadImg, FITS_CloseFile now
+	  represent file address
+          using UI32 after labfits_open_file mod.
+	- FITS_ReadImgF32 support new verions of FITS_OpenFile,
+	  FITS_GetImgSize, FITS_ReadImg, FITS_CloseFile
+	- FITS_WriteRecord removed.
+	- BugFix. FITS_CreateImage, FITS_ReadCard pointing to versioned
+	  libfits.so
+	- FITS_Test_Open support new verions of FITS_OpenFile,
+	  FITS_GetImgSize, FITS_ReadImg, FITS_CloseFile
+
+Version 4.0: August 12, 2011
+	- From RTSOFT 1.5.1 merge in FITS_CreateFile_Simple. Bugfix.
+	- From RTSOFT 1.5.1 deprecate FITS_WriteImage32 and FITS_WriteImage.
+	- From RTSOFT 1.5.1 add FITS_SaveImageSGL, FITS_WriteImageSGL and
+	  FITS_WriteImageU16.
+
+Version 3.0: May 25, 2011
+	- Moved to Labview 8.6 under FC12
+	- Broken examples removed
+
+Version 2.5
+        - Update fitsLib.c in the private directory to version 02a. Mod the VI
+          wrappers to use this new version.
+
+Version 2.4.1
+	- The labview 7.1 version
+
+--------------------------------
+Last updated: March 14, 2017
+rcantarutti@noao.edu
